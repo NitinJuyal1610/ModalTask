@@ -10,7 +10,7 @@ const App = () => {
       <button type="button" onClick={() => setToggle(false)}>
         OpenModal
       </button>
-      <h1>Data- {data}</h1>
+      <div className="box">{data}</div>
       {toggle ? <div></div> : <Modal setToggle={setToggle} setData={setData} />}
     </div>
   );
